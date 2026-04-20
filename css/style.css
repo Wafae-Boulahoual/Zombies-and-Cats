@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #333;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.head {
+    background-image: url('../images/head.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 150px; 
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #8a0303; 
+    margin-bottom: 30px;
+}
+
+.head h1 {
+    color: #8a0303; 
+    font-size: 2.5rem;
+    font-family: 'Impact', sans-serif;
+    text-transform: uppercase;
+    background: rgba(0,0,0,0);
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+#game-center {
+    position: relative;
+    flex: 2;
+}
+
+#the-game {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    background-color: dimgray;
+    padding: 15px;
+    border: 5px solid #8a0303;
+    border-radius: 50px;
+}
+
+.grid-cell {
+    background-color: #333;
+    border: 1px solid #444;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+}
+
+.sidebar-right, #sidebar-left {
+    flex: 1;
+    background-color: dimgray;
+    padding: 25px;
+    border: 5px solid #8a0303;
+    border-radius: 50px;
+    color: white;
+    text-align: center;
+}
+
+.photo-frame {
+    width: 100%;
+    height: 180px;
+    background-color: #000;
+    border: 3px solid #444;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.stats-box {
+    margin-top: 20px;
+    text-align: left;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    padding: 10px;
+    background: #000;
+    border-radius: 15px;
+}
+
+#status-message {
+    font-size: 0.9rem; 
+    color: #ffcc00; 
+    margin-top: 10px;
+    min-height: 1.2rem;
+}
+
+#btn-start {
+    background: #8a0303;
+    color: white;
+    margin: 10px auto;
+    padding: 15px 30px;
+    
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: block;
+    
+}
+
+@media (max-width: 900px) {
+    .game-container {
+        flex-direction: column;
+    }
+}

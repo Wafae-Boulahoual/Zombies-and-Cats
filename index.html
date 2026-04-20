@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zombies and Cats</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="head">
+        <h1>Zombies and Cats</h1>
+    </header>
+
+
+
+    <main class="game-container">
+
+        <aside class="sidebar-right">
+            <h2>Instruktioner:</h2><br>
+            <p>Välkommen till zombiestaden.</p><br>
+            <p>Ditt uppdrag är enkelt men livsfarligt:</p><br>
+            <ul>
+                <li>Använd pilarna för att flytta din karaktär.</li>
+                <li>Hitta de 5 gömda katter på kartan.</li>
+                <li>Undvik zombies! Om du träffar en, förlorar du ett liv.</li>
+                <li>Läs ledtrådarna i statusfältet för att se var de finns.</li>
+            </ul>
+        </aside>
+
+        <div id="game-center">
+            <button id="btn-start">STARTA SPEL</button>
+            <div id="the-game"></div>
+        </div>
+
+        <aside id="sidebar-left">
+            <h2>Status</h2>
+            <div class="photo-frame">
+                <img id="scene-image" src="images/start-scene.jpg" alt="Scene">
+            </div>
+            <p id="scene-text">Utforska staden...</p>
+            <p id="status-message"></p>
+            <div class="stats-box">
+                <p>Katter: <span id="cat-count">0</span>/5</p>
+                <p>Liv: <span id="life-count">3</span></p>
+            </div>
+        </aside>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
